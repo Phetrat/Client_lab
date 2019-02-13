@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+   <script>
+     window.onload = function() {
+         $("#id1").text("My name is Pimonnart Phetrat");
+     }
+
+     $(document).ready(function () {
+         $("#id2").text("Student ID is 5735512043");
+     });
+
+     $(function () {
+         $("#id3").text("Subject is Lab_Client");
+     });
+
+     $(function ()  {
+         $("div").click( function () {
+             $(this).text("New DIV area");
+         });
+     });
+
+     $(function ()  {
+         $("#d1").click( function () {
+             $(this).html("<h1>New HTML DIV area<h1>");
+         });
+     });
+ </script>
+
+
+  <style>
+p.italic {
+  font-style: italic;
+}
+p {
+  color: blue;
+}
+h4 {
+  color: purple;
+}
+
+h2 {
+  color: pink;
+}
+body {
+  background-image: url("bg.jpg");
+ /* background-repeat: no-repeat; */
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <br>
+
+<p id="id1"> Hello world</p>
+<p id="id2"> Hello world</p>
+<p id="id3"> Hello world</p>
+          
+  <table class="table table-bordered" >
+    <thead>
+      <tr>
+         <th>Link</th>
+         <th>Benefit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://www.google.com"><img src="google.png" alt="W3Schools.com" width="80" height="100"></a></td>
+        <td><ul>
+    <li>ประหยัดเวลา</li>
+    <li>ได้ข้อมูลครบถ้วน</li>
+    <li>มีการแลกเปลี่ยนข้อมูลระหว่างกัน</li>
+    
+    
+    </ul>
+      </tr>
+      <tr>
+        <td><a href="https://www.youtube.com"><img src="youtube.png" alt="W3Schools.com" width="80" height="100"></a></td>
+        <td><ul>
+    <li>เป็นแหล่งเรียนรู้ที่ให้ข้อมูลต่างๆ</li>
+    <li>เป็นแหล่งรวมความบันเทิง </li>
+    <li>เป็นแหล่งเรียนรู้ให้ศึกษาการทดลอง<br>ทางวิทยาศาสตร์จากทั่วโลก</li>
+    
+    
+    </ul></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 >Click button to see the change </h4>  
+<button onclick="alert('Hello');"> Alert </button>
+<button onclick="changeP('Bye Bye');" > Change P </button>
+
+</div>
+
+</body>
+</html>
